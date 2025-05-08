@@ -1,58 +1,126 @@
+/* Estilos Globais */
 body {
   margin: 0;
-  padding: 0;
-  background-color: #141414;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.card {
-  background-color: #1f1f1f;
+/* Estilos do Cartão de Perfil */
+.profile-card {
+  background-color: rgba(30, 30, 30, 0.9);
   padding: 2rem;
-  border-radius: 12px;
+  border-radius: 16px;
   text-align: center;
-  width: 300px;
-  color: #ffffff;
+  width: 320px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
 }
 
-.card img {
-  width: 80px;
-  height: 80px;
+.profile-card img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-bottom: 1rem;
+  object-fit: cover;
+  border: 3px solid #6a5acd;
 }
 
-.card h2 {
+.profile-card h2 {
   margin: 0;
-  color: #ffffff;
+  font-size: 1.3rem;
+  color: #c5f82a;
 }
 
-.location {
-  color: #c4f82a;
+.profile-card p.location {
+  color: #9effb3;
   font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+  margin: 5px 0 10px;
 }
 
-.bio {
+.profile-card p.description {
   font-size: 0.85rem;
-  color: #aaa;
-  margin-bottom: 1rem;
+  color: #ccc;
+  margin-bottom: 20px;
 }
 
-.card a {
+/* Estilos de Botões */
+.profile-card a.button,
+.button {
   display: block;
-  background-color: #333333;
+  background-color: #6a5acd;
   color: white;
-  padding: 0.6rem;
-  margin: 0.4rem 0;
   text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.card a:hover {
-  background-color: #555555;
+.profile-card a.button:hover,
+.button:hover {
+  background-color: #9370db;
+  transform: scale(1.05);
+  color: #141414;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 14px;
+  margin: 8px 0;
+  gap: 12px; /* Espaço entre ícone e texto */
+}
+
+.button img.icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* Deixa o ícone branco */
+}
+
+/* Estilos do Link de Email */
+.email-link {
+  display: block;
+  margin-top: 10px;
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+  color: #76eec6;
+}
+
+/* Estilos do Container de Perfil */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2e2e2e;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  color: white;
+}
+
+.profile-container img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.profile-container h2 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.profile-container p {
+  font-size: 14px;
+  margin: 5px 0;
 }
